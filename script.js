@@ -1,4 +1,5 @@
-const LANGUAGE_SERVER_URL = "http://localhost:5150/eval";
+const LANGUAGE_SERVER_URL =
+  "https://monkey-language-service.onrender.com:5150/eval";
 
 const button = document.getElementById("code-submission");
 button.addEventListener("click", async () => {

@@ -1,0 +1,18 @@
+#code-submission {
+  width: 16rem;
+}
+
+#eval-output {
+  color: yellow;
+}
+
+.bottom-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+html {
+  margin: 1rem;
+}

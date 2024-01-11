@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <title>Monkey Interpreter</title>
+  </head>
+  <body>
+    <section class="about">
+      <h1>Monkey Programming Language</h1>
+      <p>
+        This is a simple editor for a programming language I am building following along with the book
+        <a href="https://interpreterbook.com/">Writing an Interpreter in Go</a>. There are a few
+        differences in my implementation which can be found at the 
+        <a href="https://github.com/stilt0n/monkey-interpreter-go">github repo for the project</a>.
+      </p>
+      <h2>Data types</h2>
+      <p>
+        Right now my implementation of Monkey supports integer values, booleans, null values, and functions.
+        In the future I will also be adding strings, arrays and maps. Monkey has first class functions so
+        functions can be variables or arguments to other functions. Monkey also supports recursion.
+      </p>
+      <h2>Operators</h2>
+      <p>
+        Monkey supports:
+        <ul>
+          <li>arithmetic operators (+ - / *)</li>
+          <li>boolean operators (! == != &lt; &gt;)</li>
+        </ul>
+      </p>
+      <h2>Syntax</h2>
+      <ul>
+        <li>let statements: <code>let x = 5;</code></li>
+        <li>functions: <code>let foo = fn(x) { return x + 2; }</code></li>
+        <li>if/else statements: <code>if (x == y) { return true; } else { return false; };</code></li>
+      </ul>
+    </section>
+    <section class="code-editor">
+      <h1>Try Monkey</h1>
+      <label for="code-editor">Write some code here and submit to see result:</label>
+      <textarea
+        id="code-editor"
+        rows="10"
+        cols="80"
+        placeholder="let x = 5; x;"
+      ></textarea>
+      <div class="bottom-area">
+        <p id="eval-output"></p>
+        <button id="code-submission">Submit Code</button>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

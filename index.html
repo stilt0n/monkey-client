@@ -22,7 +22,7 @@
       <h2>Data types</h2>
       <p>
         Right now my implementation of Monkey supports positive and negative integers, strings, booleans,
-        null values, arrays and functions. In the future I will also be adding maps.
+        null values, arrays, hashes (maps) and functions.
         Monkey has first class functions so functions can be variables or arguments to other functions.
         Monkey also supports recursion.
       </p>
@@ -35,6 +35,11 @@
           <li>string operators: + concatenates strings. Negative string returns the string reversed</li>
         </ul>
       </p>
+      <h2>Data structures</h2>
+      <ul>
+        <li>Arrays <code>let arr = ["a", 2, fn(x) { return x + 1; }]; arr[2](arr[1]);</code></li>
+        <li>Hashes <code>{ "key": "value", 1: "cool", true: 1, 5: false }</code></li>
+      </ul>
       <h2>Built-in functions</h2>
       <ul>
         <li>len() for strings and arrays</li>

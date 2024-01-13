@@ -1,6 +1,7 @@
 # About
 
-A simple code editor front-end for an interpreter I'm writing.
+A simple code editor front-end for an interpreter I'm writing. Since I've implemented the programming
+language in vanilla Go without any libraries I decided the code editor should be the same.
 
 The interpreter and language server can be found [here](https://github.com/stilt0n/monkey-interpreter-go)
 

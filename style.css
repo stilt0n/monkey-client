@@ -2,8 +2,12 @@
   width: 16rem;
 }
 
-#eval-output {
+.yellow {
   color: yellow;
+}
+
+.red {
+  color: red;
 }
 
 .bottom-area {

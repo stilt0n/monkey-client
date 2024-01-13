@@ -17,4 +17,5 @@ button.addEventListener("click", async () => {
   console.log(json);
   const output = json.result;
   evalOutput.innerText = output;
+  evalOutput.className = json.isError ? "red" : "yellow";
 });
